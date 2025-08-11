@@ -8,6 +8,11 @@ AH_DIAGNOSTIC_WERROR() // Enable errors on warnings
 #include <AH/PrintStream/PrintStream.hpp>
 #include <AH/Settings/SettingsWrapper.hpp>
 
+// Fix for __PRETTY_FUNCTION__ not being defined on some compilers
+#ifndef __PRETTY_FUNCTION__
+#define __PRETTY_FUNCTION__ __FUNCSIG__
+#endif
+
 #ifndef FLUSH_ON_EVERY_DEBUG_STATEMENT
 #if !(defined(ESP32) || defined(ESP8266))
 

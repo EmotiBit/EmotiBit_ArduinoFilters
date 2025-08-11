@@ -34,7 +34,8 @@ add_executable(tests
 target_include_directories(tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(tests
     PRIVATE Arduino_Helpers
-    PRIVATE Arduino-Helpers::warnings)
+    PRIVATE Arduino-Helpers::warnings
+    PRIVATE Filters)
 
 # Add tests
 gtest_discover_tests(tests DISCOVERY_TIMEOUT 60 TIMEOUT 20)

@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36E109C5-26EE-3BA7-93F4-9202AE1061ED}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\test\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\test\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\test\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tests.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\test\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tests.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googletest/include" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googletest" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googlemock/include" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googlemock"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4458</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NO_DEBUG_PRINTS;ANALOG_FILTER_SHIFT_FACTOR_OVERRIDE=2;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;NO_DEBUG_PRINTS;ANALOG_FILTER_SHIFT_FACTOR_OVERRIDE=2;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=tests -D TEST_EXECUTABLE=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/Debug/tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=tests_TESTS -D CTEST_FILE=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=60 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.1/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\src\AH\Debug\Arduino_Helpersd.lib;Filters.lib;..\mock\Debug\ArduinoMockd.lib;..\lib\Debug\gtest.lib;..\lib\Debug\gmock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/Debug/tests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/Debug/tests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googletest/include" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googletest" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googlemock/include" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googlemock"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4127;4458</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NO_DEBUG_PRINTS;ANALOG_FILTER_SHIFT_FACTOR_OVERRIDE=2;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NO_DEBUG_PRINTS;ANALOG_FILTER_SHIFT_FACTOR_OVERRIDE=2;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=tests -D TEST_EXECUTABLE=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/Release/tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=tests_TESTS -D CTEST_FILE=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=60 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.1/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\src\AH\Release\Arduino_Helpers.lib;Filters.lib;..\mock\Release\ArduinoMock.lib;..\lib\Release\gtest.lib;..\lib\Release\gmock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/Release/tests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/Release/tests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googletest/include" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googletest" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googlemock/include" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googlemock"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4127;4458</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NO_DEBUG_PRINTS;ANALOG_FILTER_SHIFT_FACTOR_OVERRIDE=2;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NO_DEBUG_PRINTS;ANALOG_FILTER_SHIFT_FACTOR_OVERRIDE=2;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=tests -D TEST_EXECUTABLE=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/MinSizeRel/tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=tests_TESTS -D CTEST_FILE=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=60 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.1/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\src\AH\MinSizeRel\Arduino_Helpers.lib;Filters.lib;..\mock\MinSizeRel\ArduinoMock.lib;..\lib\MinSizeRel\gtest.lib;..\lib\MinSizeRel\gmock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/MinSizeRel/tests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/MinSizeRel/tests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googletest/include" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googletest" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googlemock/include" /external:I "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-src/googlemock"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4458</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NO_DEBUG_PRINTS;ANALOG_FILTER_SHIFT_FACTOR_OVERRIDE=2;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NO_DEBUG_PRINTS;ANALOG_FILTER_SHIFT_FACTOR_OVERRIDE=2;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\src\AH\..;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core-Libraries;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_GFX;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Adafruit_SSD1306;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Libraries\Encoder;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googletest;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock\include;C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-src\googlemock;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=tests -D TEST_EXECUTABLE=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/RelWithDebInfo/tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=tests_TESTS -D CTEST_FILE=C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=60 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.1/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\src\AH\RelWithDebInfo\Arduino_Helpers.lib;Filters.lib;..\mock\RelWithDebInfo\ArduinoMock.lib;..\lib\RelWithDebInfo\gtest.lib;..\lib\RelWithDebInfo\gmock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/RelWithDebInfo/tests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/RelWithDebInfo/tests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters -BC:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build --check-stamp-file C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\GoogleTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters -BC:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build --check-stamp-file C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\GoogleTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters -BC:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build --check-stamp-file C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\GoogleTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters -BC:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build --check-stamp-file C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\GoogleTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\test_example.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\test-main.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\PrintStream\test-PrintStream.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Timing\test-Timer.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\test-FilteredAnalog.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\ExtendedInputOutput\test-AnalogMultiplex.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\ExtendedInputOutput\test-ExtendedInputOutput.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\test-IncrementDecrementButtons.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\test-IncrementButton.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\test-Button.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Containers\test-Updatable.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Containers\test-DoublyLinkedList.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Containers\test-Array.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Containers\tests-BitArray.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Math\test-Degrees.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Math\test-Quaternion.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Math\test-IncreaseBitDepth.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Math\test-Vector.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Filters\test-Hysteresis.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Filters\test-EMA.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-SOSFilter.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-MedianFilter.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-IIRFilter.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-BiQuad.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-Butterworth.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-FIRFilter.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-SMA.cpp" />
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-FixedPoint.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\ZERO_CHECK.vcxproj">
+      <Project>{A90949F5-B059-3F7B-A581-7DF13B46EBA5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\mock\ArduinoMock.vcxproj">
+      <Project>{EDB5F998-F0D3-38F2-AF1B-7A2390C9C890}</Project>
+      <Name>ArduinoMock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\src\AH\Arduino_Helpers.vcxproj">
+      <Project>{80EAAA7E-A01A-31D3-9966-76A2CA7B4DF2}</Project>
+      <Name>Arduino_Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-build\googlemock\gmock.vcxproj">
+      <Project>{333BB8B1-8E65-309F-B4D7-89AFE5C5AA72}</Project>
+      <Name>gmock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{C9CB28D0-473F-3070-B7BF-196B36FD1672}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

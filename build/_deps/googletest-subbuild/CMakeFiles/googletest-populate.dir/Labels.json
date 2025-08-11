@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/ea0c95edaed667aacd176fb4e16c59f6/googletest-populate.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/e41d0007b973ed8768031f851b273ffd/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/6bda1f7e9f6bf8e2111ebace7dcab70e/googletest-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/6bda1f7e9f6bf8e2111ebace7dcab70e/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/6bda1f7e9f6bf8e2111ebace7dcab70e/googletest-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/6bda1f7e9f6bf8e2111ebace7dcab70e/googletest-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/6bda1f7e9f6bf8e2111ebace7dcab70e/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/6bda1f7e9f6bf8e2111ebace7dcab70e/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/6bda1f7e9f6bf8e2111ebace7dcab70e/googletest-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/jxie7/Documents/Arduino/libraries/EmotiBit_ArduinoFilters/build/_deps/googletest-subbuild/CMakeFiles/6bda1f7e9f6bf8e2111ebace7dcab70e/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

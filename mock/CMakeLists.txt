@@ -1,5 +1,3 @@
-find_package(GTest REQUIRED CONFIG)
-
 add_library(ArduinoMock
     "Core/Arduino.cpp"
     "Core/ArduinoMock.cpp"

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\test_example.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\test-main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\PrintStream\test-PrintStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Timing\test-Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\test-FilteredAnalog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\ExtendedInputOutput\test-AnalogMultiplex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\ExtendedInputOutput\test-ExtendedInputOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\test-IncrementDecrementButtons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\test-IncrementButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Hardware\test-Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Containers\test-Updatable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Containers\test-DoublyLinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Containers\test-Array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Containers\tests-BitArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Math\test-Degrees.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Math\test-Quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Math\test-IncreaseBitDepth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Math\test-Vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Filters\test-Hysteresis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\AH\Filters\test-EMA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-SOSFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-MedianFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-IIRFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-BiQuad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-Butterworth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-FIRFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-SMA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\Filters\test-FixedPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{98BF6B0E-66BB-36E0-AD2F-841EFAC10514}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

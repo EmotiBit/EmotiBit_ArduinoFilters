@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\build\_deps\googletest-subbuild\CMakeFiles\ea0c95edaed667aacd176fb4e16c59f6\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{61A0D8DE-B280-3339-B300-7054689C2D84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core\Arduino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core\ArduinoMock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core\HardwareSerial0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\Core\Print.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jxie7\Documents\Arduino\libraries\EmotiBit_ArduinoFilters\mock\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{98BF6B0E-66BB-36E0-AD2F-841EFAC10514}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
