@@ -1,0 +1,15 @@
+# .vscode/
+.vscode/tags
+*.pc
+.vscode/ipch
+.cache
+
+.~lock*
+__pycache__/
+
+*.tmp
+*.hex
+
+build
+docs/Coverage
+docs/Doxygen
