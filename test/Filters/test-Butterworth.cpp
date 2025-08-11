@@ -97,9 +97,9 @@ TEST(Butterworth, PietersPages) {
 
     auto butterworth = butter<4, double>(45. / 360.);
 
-    double alpha = -2 * cos(M_PI * 5 / 8);
-    double beta = -2 * cos(M_PI * 7 / 8);
-    double gamma = 1. / tan(M_PI * 45. / 360. / 2);
+    double alpha = -2 * cos(PI * 5 / 8);
+    double beta = -2 * cos(PI * 7 / 8);
+    double gamma = 1. / tan(PI * 45. / 360. / 2);
     IIRFilter<5, 5, double> reference = {
         {{1, 4, 6, 4, 1}},
         {{

@@ -25,7 +25,7 @@
  */
 template <class T = float>
 FIRFilter<3, T> simpleNotchFIR(double f_n) {
-    double cos_omega = std::cos(M_PI * f_n);
+    double cos_omega = std::cos(PI * f_n);
     double normalize = 2 - 2 * cos_omega;
     return {{
         T(1. / normalize),
