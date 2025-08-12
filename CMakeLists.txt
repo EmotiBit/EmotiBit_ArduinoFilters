@@ -40,7 +40,7 @@ if (AH_DOXYGEN)
 endif()
 
 # Compiler warnings
-option(AH_WARNINGS_AS_ERRORS "Enable -Werror" Off)
+option(AH_WARNINGS_AS_ERRORS "Enable -Werror" On)
 include(cmake/Warnings.cmake)
 
 # Build the source files and tests
