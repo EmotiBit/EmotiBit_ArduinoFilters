@@ -8,8 +8,8 @@ AH_DIAGNOSTIC_WERROR() // Enable errors on warnings
 #include <AH/PrintStream/PrintStream.hpp>
 #include <AH/Settings/SettingsWrapper.hpp>
 
-// Fix for __PRETTY_FUNCTION__ not being defined on some compilers
-#ifndef __PRETTY_FUNCTION__
+// Map __PRETTY_FUNCTION__ to MSVC's __FUNCSIG__ only on MSVC compilers
+#if defined(_MSC_VER) && !defined(__PRETTY_FUNCTION__)
 #define __PRETTY_FUNCTION__ __FUNCSIG__
 #endif
 
