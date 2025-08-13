@@ -8,9 +8,15 @@ AH_DIAGNOSTIC_WERROR() // Enable errors on warnings
 #include <AH/PrintStream/PrintStream.hpp>
 #include <AH/Settings/SettingsWrapper.hpp>
 
-// Map __PRETTY_FUNCTION__ to MSVC's __FUNCSIG__ only on MSVC compilers
-#if defined(_MSC_VER) && !defined(__PRETTY_FUNCTION__)
-#define __PRETTY_FUNCTION__ __FUNCSIG__
+// Define FUNC_NAME depending on available compiler macros
+#if defined(__PRETTY_FUNCTION__)
+#define FUNC_NAME __PRETTY_FUNCTION__
+#elif defined(__FUNCSIG__)
+#define FUNC_NAME __FUNCSIG__
+#elif defined(__FUNCTION__)
+#define FUNC_NAME __FUNCTION__
+#else
+#define FUNC_NAME __func__
 #endif
 
 #ifndef FLUSH_ON_EVERY_DEBUG_STATEMENT
@@ -70,7 +76,7 @@ AH_DIAGNOSTIC_WERROR() // Enable errors on warnings
 #define DEBUG_STR(x) DEBUG_STR_HELPER(x)
 
 #define DEBUG_FUNC_LOCATION                                                    \
-    '[' << __PRETTY_FUNCTION__ << F(" @ line " DEBUG_STR(__LINE__) "]:\t")
+    '[' << FUNC_NAME << F(" @ line " DEBUG_STR(__LINE__) "]:\t")
 #define DEBUG_LOCATION "[" __FILE__ ":" DEBUG_STR(__LINE__) "]:\t"
 
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
