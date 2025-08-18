@@ -8,15 +8,18 @@ AH_DIAGNOSTIC_WERROR() // Enable errors on warnings
 #include <AH/PrintStream/PrintStream.hpp>
 #include <AH/Settings/SettingsWrapper.hpp>
 
-// Define FUNC_NAME depending on available compiler macros
-#if defined(__PRETTY_FUNCTION__)
-#define FUNC_NAME __PRETTY_FUNCTION__
-#elif defined(__FUNCSIG__)
-#define FUNC_NAME __FUNCSIG__
-#elif defined(__FUNCTION__)
-#define FUNC_NAME __FUNCTION__
-#else
-#define FUNC_NAME __func__
+// Portable function-name macro:
+// - GCC/Clang: __PRETTY_FUNCTION__ (detailed signature)
+// - MSVC: __FUNCSIG__
+// - Fallback: standard __func__
+#ifndef FUNC_NAME
+#  if defined(_MSC_VER)
+#    define FUNC_NAME __FUNCSIG__
+#  elif defined(__clang__) || defined(__GNUC__)
+#    define FUNC_NAME __PRETTY_FUNCTION__
+#  else
+#    define FUNC_NAME __func__
+#  endif
 #endif
 
 #ifndef FLUSH_ON_EVERY_DEBUG_STATEMENT
