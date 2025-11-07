@@ -12,7 +12,8 @@
 
 #include <cmath>
 
-#if !defined(__clang__) && !defined(_GLIBCXX_USE_C99_MATH_TR1)
+#if !defined(__clang__) && !defined(_GLIBCXX_USE_C99_MATH_TR1) && defined(ARDUINO)
+// TODO figure out why this is needed and why it is breaking everything
 #pragma message("FMA math fix")
 namespace std {
   constexpr double

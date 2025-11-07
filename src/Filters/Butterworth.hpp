@@ -25,11 +25,11 @@
 template <uint8_t N, class T = float>
 SOSCoefficients<T, (N + 1) / 2> butter_coeff(double f_n,
                                              bool normalize = true) {
-    const double gamma = 1 / std::tan(M_PI * f_n / 2); // pre-warp factor
+    const double gamma = 1 / std::tan(PI * f_n / 2); // pre-warp factor
 
     auto make_sos = [=](uint8_t k) {
         const double gamma2 = gamma * gamma;
-        const double alpha = 2 * std::cos(2 * M_PI * (2 * k + N + 1) / (4 * N));
+        const double alpha = 2 * std::cos(2 * PI * (2 * k + N + 1) / (4 * N));
         return BiQuadCoefficients<T>{
             {{T(1.), T(2.), T(1.)}}, // b0, b1, b2
             {{
@@ -51,7 +51,7 @@ SOSCoefficients<T, (N + 1) / 2> butter_coeff(double f_n,
 
     auto make_sos_norm = [=](uint8_t k) {
         const double gamma2 = gamma * gamma;
-        const double alpha = 2 * std::cos(2 * M_PI * (2 * k + N + 1) / (4 * N));
+        const double alpha = 2 * std::cos(2 * PI * (2 * k + N + 1) / (4 * N));
         const double a0 = gamma2 - alpha * gamma + 1;
         return BiQuadCoefficients<T>{
             {{T(1. / a0), T(2. / a0), T(1. / a0)}}, // b0, b1, b2

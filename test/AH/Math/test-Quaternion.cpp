@@ -271,7 +271,7 @@ TEST(Quaternion, fromDirectionInvalid) {
 
 TEST(Quaternion, fromDirectionRandom) {
     std::mt19937_64 generator(0);
-    std::uniform_real_distribution<float> distribution(0.0, M_PI);
+    std::uniform_real_distribution<float> distribution(0.0, PI);
 
     for (size_t i = 0; i < 1'000'000; ++i) {
         // Pick a random vector somewhere on the unit sphere

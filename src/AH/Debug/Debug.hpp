@@ -8,6 +8,20 @@ AH_DIAGNOSTIC_WERROR() // Enable errors on warnings
 #include <AH/PrintStream/PrintStream.hpp>
 #include <AH/Settings/SettingsWrapper.hpp>
 
+// Portable function-name macro:
+// - GCC/Clang: __PRETTY_FUNCTION__ (detailed signature)
+// - MSVC: __FUNCSIG__
+// - Fallback: standard __func__
+#ifndef FUNC_NAME
+#  if defined(_MSC_VER)
+#    define FUNC_NAME __FUNCSIG__
+#  elif defined(__clang__) || defined(__GNUC__)
+#    define FUNC_NAME __PRETTY_FUNCTION__
+#  else
+#    define FUNC_NAME __func__
+#  endif
+#endif
+
 #ifndef FLUSH_ON_EVERY_DEBUG_STATEMENT
 #if !(defined(ESP32) || defined(ESP8266))
 
@@ -65,7 +79,7 @@ AH_DIAGNOSTIC_WERROR() // Enable errors on warnings
 #define DEBUG_STR(x) DEBUG_STR_HELPER(x)
 
 #define DEBUG_FUNC_LOCATION                                                    \
-    '[' << __PRETTY_FUNCTION__ << F(" @ line " DEBUG_STR(__LINE__) "]:\t")
+    '[' << FUNC_NAME << F(" @ line " DEBUG_STR(__LINE__) "]:\t")
 #define DEBUG_LOCATION "[" __FILE__ ":" DEBUG_STR(__LINE__) "]:\t"
 
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
